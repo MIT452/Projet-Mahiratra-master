@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/politique_de_confidentialite.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité</title>
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="./assets/font/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/font/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
+    <link href="./assets/font/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Section caché de BARRE DE RECHERCHE -->
+    <div id="searchBlock" class="search-block">
+
+        <div class="divCher">
+            <form action="#" method="POST"></form>
+            <span class="close-btn0" id="closeSearchBtn">&times;</span>
+            <div class="cadreS">
+                <div id="searchBar" class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher...">
+                    <i class="fa-solid fa-search" id="icon-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Partie caché de barre de contact -->
+
+    <div id="contactBlock" class="contact-block">
+        <div class="divBody">
+            <form action="#" method="POST"></form>
+            <span class="close-btn" id="closeContactBtn">&times;</span>
+            <div class="tex-contactBody">
+                <div class="imagg">
+                    <img src="./assets/image/Mahiratra.jpg" alt="Mahiratra">
+                    <p class="tex-img">Vous souhaitez nous contactez ?</p>
+                </div>
+                <div class="tex-details">
+                    <p class="p1"><span><span class="mar">____</span>Mahiratra Groupe</span> est un fournisseur
+                        de
+                        services de conseil informatique et de
+                        développement de logiciels. Après avoir débuté en tant que petite entreprise de produits
+                        d'IA, nous
+                        sommes passés aux services informatiques et depuis, nous avons aidé les organisations
+                        informatiques
+                        et les sociétés de produits logiciels à améliorer leurs performances commerciales et à
+                        gagner
+                        rapidement de nouveaux clients.</p>
+                    <p class="p2">EN SAVOIR PLUS</p>
+                    <p class="p3">© 2024 Mahiratra Groupe. Tous droits réservés.</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contact-forme" action="http://localhost:3000/contact" method="POST">
+                    <div class="cadra">
+
+                        <div class="form-group">
+                            <label for="name">VOTRE NOM</label>
+                            <input type="text" id="name" name="name" placeholder="Entrez Votre Nom" required>
+                            <i class="icon-user">
+                                <i class="fa-solid fa-user"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">VOTRE EMAIL</label>
+                            <input type="email" id="email" name="email" placeholder="Entrez Votre Email" required>
+                            <i class="icon-email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">SUJET</label>
+                            <input type="text" id="subject" name="subject" placeholder="Entrez Votre Sujet" required>
+                            <i class="icon-folder">
+                                <i class="fa-solid fa-folder"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">VOTRE MESSAGE (OPTIONNEL)</label>
+                            <textarea id="message" name="message" placeholder="Entrez Votre Message"></textarea>
+                            <i class="icon-message">
+                                <i class="fa-solid fa-comments"></i>
+                            </i>
+                        </div>
+                        <button type="submit">SOUMETTRE</button>
+                    </div>
+                </form>
+                <!-- Conteneur pour afficher le message de notification -->
+                <div id="notificatione-overlay" class="hidden">
+                    <div id="notificatione">
+                        <p id="notificatione-message"></p>
+                        <button id="close-notificatione">OK</button>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--Section Header-->
+    <section class="header">
+        <nav class="navbar">
+            <div class="cale">
+                <span class="toggle"><i class="fa-solid fa-bars" id="toggle"></i></span>
+                <span class="caché"><a href="index.html" class="home"><i class="fa-solid fa-house"
+                            id="home"></i></a></span>
+            </div>
+            <a href="#"><img class="logo" src="./assets/image/Mahiratra.jpg" alt="Logo Mahiratra Groupe"></a>
+            <div class="scale">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos de nous</a>
+                <a href="service.html">Nos services</a>
+                <a href="contact.html" class="mobile">Contact</a>
+            </div>
+            <div class="centre">
+                <div class="espaceX">
+                    <span class="search-icon" id="showSearch"><i class="fa-solid fa-search"></i></span>
+                    <!-- <a href="#"><img class="header-icon" id="showSearch" src="./assets/image/chercher.png"
+                            alt="Icon pour chercher"></a> -->
+                </div>
+                <a href="contact.html" class="btn-secondary contact-btn">Contact</a>
+                <div class="espaceX">
+                    <span class="m-contact-icon" id="showContact"><i class="fa-solid fa-border-all"
+                            style="margin-left: 30px; margin-right: 10px;"></i></span>
+                </div>
+                <!-- <a href="#"><img class="header-icon" id="showContact" src="./assets/image/menu.png"
+                        alt="Menu pour contact"></a> -->
+            </div>
+        </nav>
+    </section>
+
+    <!--Section Hero (Example Section) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Politique de confidentialité</h1>
+            <div class="texte-para">
+                <p class="opacity"><a href="index.html">Accueil</a></p>
+                <p class="opacity"> > </p>
+                <p>Politique de confidentialité </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="politique">
+        <div class="form-politique">
+
+            <div class="text-politique">
+                <p class="titre-politique">Qui sommes-nous</p>
+                <p><span>Texte suggéré :</span> L'adresse de notre site Web est : https://mahiratragroupe.com.</p>
+            </div>
+            <div class="text-politique">
+                <p class="titre-politique">Commentaires</p>
+                <p><span>Texte suggéré :</span> Lorsque les visiteurs laissent des commentaires sur le site, nous
+                    collectons
+                    les
+                    données affichées dans le formulaire de commentaires, ainsi que l'adresse IP du visiteur et la
+                    chaîne de
+                    l'agent utilisateur du navigateur pour aider à la détection du spam</p>
+            </div>
+            <div class="text-politique">
+                <p class="titre-politique">Cookies</p>
+                <p><span>Texte suggéré :</span> Si vous déposez un commentaire sur notre site, vous aurez la possibilité
+                    d'enregistrer votre nom, votre adresse e-mail et votre site web dans des cookies. Ces cookies sont
+                    uniquement destinés à votre confort afin de ne pas avoir à saisir à nouveau ces informations lorsque
+                    vous déposez un autre commentaire. Ces cookies expirent au bout d'un an. Si vous visitez notre page
+                    de
+                    connexion, nous installerons un cookie temporaire afin de déterminer si votre navigateur accepte les
+                    cookies.
+                    Ce cookie ne contient aucune donnée personnelle et sera supprimé lorsque vous fermerez votre
+                    navigateur.
+
+                    Lorsque vous vous connectez, nous mettons en place un certain nombre de cookies pour enregistrer vos
+                    informations de connexion et vos préférences d'affichage à l'écran. La durée de vie d'un cookie de
+                    connexion est de deux jours, celle d'un cookie d'option d'affichage est d'un an.</p>
+            </div>
+            <div class="text-politique">
+                <p class="titre-politique">Contenu intégré provenant d'autres sites Web</p>
+                <p><span>Texte suggéré :</span> Les articles de ce site peuvent inclure du contenu intégré (par exemple
+                    des
+                    vidéos, des images, des articles, etc.). Le contenu intégré provenant d'autres sites Web se comporte
+                    exactement de la même manière que si le visiteur avait visité cet autre site Web.
+
+                    Ces sites Web peuvent collecter des données sur vous, utiliser des cookies, intégrer un suivi tiers
+                    supplémentaire et surveiller votre interaction avec ce contenu intégré, y compris le suivi de votre
+                    interaction avec le contenu intégré si vous avez un compte et êtes connecté à ce site Web.</p>
+            </div>
+            <div class="text-politique">
+                <p class="titre-politique">Avec qui partageons-nous vos données ?</p>
+                <p><span>Texte suggéré :</span> Si vous demandez une réinitialisation de mot de passe, votre adresse IP
+                    sera incluse dans l'e-mail de réinitialisation.</p>
+            </div>
+            <div class="text-politique">
+                <p class="titre-politique">Combien de temps conservons-nous vos données ?</p>
+                <p><span>Texte suggéré :</span> Si vous laissez un commentaire, le commentaire et ses métadonnées sont
+                    conservés indéfiniment. Cela nous permet de reconnaître et d'approuver automatiquement les
+                    commentaires suivants au lieu de les conserver dans une file d'attente de modération.
+
+                    Pour les utilisateurs qui s'inscrivent sur notre site Web (le cas échéant), nous stockons également
+                    les informations personnelles qu'ils fournissent dans leur profil d'utilisateur. Tous les
+                    utilisateurs peuvent voir, modifier ou supprimer leurs informations personnelles à tout moment (à
+                    l'exception de
+                    leur nom d'utilisateur). Les administrateurs du site Web peuvent également voir et modifier ces
+                    informations.
+                </p>
+            </div>
+            <div class="text-politique">
+                <p class="titre-politique">Quels droits avez-vous sur vos données</p>
+                <p><span>Texte suggéré :</span>Si vous avez un compte sur ce site ou si vous avez laissé des
+                    commentaires, vous pouvez demander à recevoir un fichier contenant toutes les données personnelles
+                    que nous possédons à votre sujet, y compris celles que vous nous avez fournies. Vous pouvez
+                    également demander la
+                    suppression des données personnelles que nous possédons à votre sujet. Cela ne prend pas en compte
+                    les données
+                    que nous sommes obligés de conserver à des fins administratives, légales ou de sécurité.</p>
+            </div>
+            <div class="text-politique">
+                <p class="titre-politique">Où vos données sont envoyées</p>
+                <p><span>Texte suggéré :</span>Les commentaires des visiteurs peuvent être vérifiés à l'aide d'un
+                    service automatisé de détection des commentaires indésirables.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Section footer -->
+
+    <footer>
+        <div class="footer-top">
+            <div class="about-footer-text">
+                <h3>Rejoignez notre liste de diffusion</h3>
+                <p>Pour recevoir nos actualités et mises à jour directement dans votre boîte de réception.</p>
+            </div>
+            <div class="newsletter-signup">
+                <form id="subscribeForm">
+                    <input type="email" id="emaile" placeholder="Votre Adresse E-Mail" required />
+                    <button type="submit">S'INSCRIRE</button>
+                </form>
+                <p id="responseMessage"></p>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="footer-column logo-column">
+                <img src="./assets/image/Mahiratra.jpg" alt="Logo Mahiratra Groupe">
+                <p class="tex">Mahiratra Groupe est un fournisseur de services de conseil informatique et de
+                    développement de
+                    logiciels.
+                    Après avoir débuté en tant que petite entreprise de produits d'IA, nous sommes passés aux services
+                    informatiques et depuis,
+                    nous avons aidé des organisations informatiques et des sociétés de produits logiciels.
+                </p>
+            </div>
+
+            <div class="footer-column contact-column">
+                <h4>Entrer en contact</h4>
+                <h5>Emplacement</h5>
+                <p>Lot : K 16 , rue de Tananarive ,
+                    Tanambao Antalaha 206
+                    Madagascar </p>
+                <h5>Contact</h5>
+                <p>Envoyez-nous un mail : <a href="mailto:mahiratragroupe@gmail.com">mahiratragroupe@gmail.com</a></p>
+            </div>
+
+            <div class="footer-column company-column">
+                <h4>Entreprise</h4>
+                <ul>
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="about.html">À propos de nous</a></li>
+                    <li><a href="contact.html">Contactez-nous</a></li>
+                    <li><a href="service.html">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column services-column">
+                <h4>Nos services</h4>
+                <ul>
+                    <li><a href="service_d_application.html">Services d'application</a></li>
+                    <li><a href="transformation_numerique.html">Transformation numérique</a></li>
+                    <li><a href="conseil_en_informatique.html">Conseil en informatique</a></li>
+                    <li><a href="gestion_et_support.html">Gestion et support</a></li>
+                    <li><a href="developpement_de_logiciels.html">Développement de logiciels</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column essentials-column">
+                <h4>Essentiel</h4>
+                <ul>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="abesoin">
+            <div class="p-besoin">
+                <img src="./assets/image/help-button-1701468_1280.png" alt="help">
+            </div>
+            <div class="besoin">
+                <p>BESOIN D'AIDE ?</p>
+                <a class="consultation" href="contact.html">Consultation gratuite</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="p">© 2024 Mahiratra Groupe. Tous droits réservés.</div>
+        </div>
+    </footer>
+
+    <div class="back-to-top-box">
+        <button class="btn-back" onclick="topFunction()">
+            <i class="fa fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div id="notificatioResults" class="notificatio-results">
+        <span id="notificatioMessage"></span>
+        <button id="prevResult">&lt;</button>
+        <button id="nextResult">&gt;</button>
+    </div>
+
+    <script src="./assets/js/politique_de_confidentialite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

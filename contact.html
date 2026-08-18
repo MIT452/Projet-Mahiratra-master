@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mahiratra Groupe</title>
+    <link rel="icon" type="image" href="./assets/image/Mahiratra.jpg" sizes="16x16">
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="./assets/font/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/font/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
+    <link href="./assets/font/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Section caché de BARRE DE RECHERCHE -->
+    <div id="searchBlock" class="search-block">
+
+        <div class="divCher">
+            <form action="#" method="POST"></form>
+            <span class="close-btn0" id="closeSearchBtn">&times;</span>
+            <div class="cadreS">
+                <div id="searchBar" class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher...">
+                    <i class="fa-solid fa-search" id="icon-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Partie caché de barre de contact -->
+
+    <div id="contactBlock" class="contact-block">
+        <div class="divBody">
+            <form action="#" method="POST"></form>
+            <span class="close-btn" id="closeContactBtn">&times;</span>
+            <div class="tex-contactBody">
+                <div class="imagg">
+                    <img src="./assets/image/Mahiratra.jpg" alt="Mahiratra">
+                    <p class="tex-img">Vous souhaitez nous contactez ?</p>
+                </div>
+                <div class="tex-details">
+                    <p class="p1"><span><span class="mar">____</span>Mahiratra Groupe</span> est un fournisseur
+                        de
+                        services de conseil informatique et de
+                        développement de logiciels. Après avoir débuté en tant que petite entreprise de produits
+                        d'IA, nous
+                        sommes passés aux services informatiques et depuis, nous avons aidé les organisations
+                        informatiques
+                        et les sociétés de produits logiciels à améliorer leurs performances commerciales et à
+                        gagner
+                        rapidement de nouveaux clients.</p>
+                    <p class="p2">EN SAVOIR PLUS</p>
+                    <p class="p3">© 2024 Mahiratra Groupe. Tous droits réservés.</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contact-forme" action="http://localhost:3000/contact" method="POST">
+                    <div class="cadra">
+
+                        <div class="form-group">
+                            <label for="name">VOTRE NOM</label>
+                            <input type="text" id="name" name="name" placeholder="Entrez Votre Nom" required>
+                            <i class="icon-user">
+                                <i class="fa-solid fa-user"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">VOTRE EMAIL</label>
+                            <input type="email" id="email" name="email" placeholder="Entrez Votre Email" required>
+                            <i class="icon-email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">SUJET</label>
+                            <input type="text" id="subject" name="subject" placeholder="Entrez Votre Sujet" required>
+                            <i class="icon-folder">
+                                <i class="fa-solid fa-folder"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">VOTRE MESSAGE (OPTIONNEL)</label>
+                            <textarea id="message" name="message" placeholder="Entrez Votre Message"></textarea>
+                            <i class="icon-message">
+                                <i class="fa-solid fa-comments"></i>
+                            </i>
+                        </div>
+                        <button type="submit" id="btn-soumettre">SOUMETTRE</button>
+                    </div>
+                </form>
+                <!-- Conteneur pour afficher le message de notification -->
+                <div id="notificatione-overlay" class="hidden">
+                    <div id="notificatione">
+                        <p id="notificatione-message" style="color: #2b542c;"></p>
+                        <button id="close-notificatione">OK</button>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!--Section Header-->
+    <section class="header">
+        <nav class="navbar">
+            <div class="cale">
+                <span class="toggle"><i class="fa-solid fa-bars" id="toggle"></i></span>
+                <span class="caché"><a href="index.html" class="home"><i class="fa-solid fa-house"
+                            id="home"></i></a></span>
+            </div>
+            <a href="#"><img class="logo" src="./assets/image/Mahiratra.jpg" alt="Logo Mahiratra Groupe"></a>
+            <div class="scale">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos de nous</a>
+                <a href="service.html">Nos services</a>
+                <a href="contact.html" class="mobile couleur">Contact</a>
+            </div>
+            <div class="centre">
+                <div class="espaceX">
+                    <span class="search-icon" id="showSearch"><i class="fa-solid fa-search"></i></span>
+                </div>
+                <a href="contact.html" class="btn-secondary contact-btn">Contact</a>
+                <div class="espaceX">
+                    <span class="m-contact-icon" id="showContact"><i class="fa-solid fa-border-all"
+                            style="margin-left: 30px; margin-right: 10px;"></i></span>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!--Section Hero (Example Section) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contactez-nous</h1>
+            <div class="texte-para">
+                <p class="opacity"><a href="index.html">Accueil</a></p>
+                <p> > Contactez-nous </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Section Body-Contact -->
+
+
+    <section class="body-contact">
+        <div class="corp">
+            <div class="contact-form">
+                <form id="contact-form" action="http://localhost:3000/contact" method="POST">
+                    <div class="cadra">
+
+                        <div class="form-group">
+                            <label for="name">VOTRE NOM</label>
+                            <input type="text" id="name" name="name" class="name" placeholder="Entrez Votre Nom" required>
+                            <i class="icon-user">
+                                <i class="fa-solid fa-user"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">VOTRE EMAIL</label>
+                            <input type="email" id="email" name="email" class="email" placeholder="Entrez Votre Email" required>
+                            <i class="icon-email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">SUJET</label>
+                            <input type="text" id="subject" name="subject" class="subject" placeholder="Entrez Votre Sujet" required>
+                            <i class="icon-folder">
+                                <i class="fa-solid fa-folder"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">VOTRE MESSAGE (OPTIONNEL)</label>
+                            <textarea id="message" name="message" class="message" placeholder="Entrez Votre Message"></textarea>
+                            <i class="icon-message">
+                                <i class="fa-solid fa-comments"></i>
+                            </i>
+                        </div>
+                        <button type="submit" id="btn-submit">SOUMETTRE</button>
+                    </div>
+                </form>
+                <!-- Conteneur pour afficher le message de notification -->
+                <div id="notification-overlay" class="hidden">
+                    <div id="notification">
+                        <p id="notification-message" style="color: #2b542c;"></p>
+                        <button id="close-notification">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="coordonne">
+            <div class="corp-cordonne">
+                <div class="titre-coord">
+                    <p> Coordonnées de </p>
+                </div>
+                <div class="titre-contact">
+                    <p>Contactez notre équipe d'experts</p>
+                </div>
+                <p style="line-height: 30px;">Envoyez un message via le formulaire fourni. Si votre demande
+                    est urgente, veuillez utiliser les coordonnées ci-dessous.</p>
+                <div class="gap">
+                    <div class="cadreA">
+                        <div class="ordre"><i class="fa-solid fa-location-dot" id="icon-adresse"></i></div>
+                        <div class="grid">
+                            <p class="titra-adresse">Adresse</p>
+                            <p class="texte-adresse" style="line-height: 30px;">Lot: k16 , rue de Tananarive , Tanambao
+                                Antalaha 206
+                                MADAGASCAR </p>
+                        </div>
+                    </div>
+
+                    <div class="cadreA">
+                        <div class="ordre1"><i class="fa-solid fa-phone-volume" id="icon-demande"></i></div>
+                        <div class="grid">
+                            <p class="titra-adresse">Demandes générales</p>
+                            <p class="texte-adresse">Courriel : mahiratragroupe@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="cadreA">
+                        <div class="ordre1"><i class="fa-solid fa-clock" id="icon-heure"></i></div>
+                        <div class="grid">
+                            <p class="titra-adresse">Heures d'ouverture</p>
+                            <p class="texte-adresse">Service client 24h/24 et 7j/7</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section footer -->
+
+    <footer>
+        <div class="footer-top">
+            <div class="about-footer-text">
+                <h3>Rejoignez notre liste de diffusion</h3>
+                <p>Pour recevoir nos actualités et mises à jour directement dans votre boîte de réception.</p>
+            </div>
+            <div class="newsletter-signup">
+                <form id="subscribeForm">
+                    <input type="email" id="emaile" placeholder="Votre Adresse E-Mail" required />
+                    <button type="submit">S'INSCRIRE</button>
+                </form>
+                <p id="responseMessage"></p>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="footer-column logo-column">
+                <img src="./assets/image/Mahiratra.jpg" alt="Logo Mahiratra Groupe">
+                <p class="tex">Mahiratra Groupe est un fournisseur de services de conseil informatique et de
+                    développement de
+                    logiciels.
+                    Après avoir débuté en tant que petite entreprise de produits d'IA, nous sommes passés aux services
+                    informatiques et depuis,
+                    nous avons aidé des organisations informatiques et des sociétés de produits logiciels.
+                </p>
+            </div>
+
+            <div class="footer-column contact-column">
+                <h4>Entrer en contact</h4>
+                <h5>Emplacement</h5>
+                <p>Lot : K 16 , rue de Tananarive ,
+                    Tanambao Antalaha 206
+                    Madagascar </p>
+                <h5>Contact</h5>
+                <p>Envoyez-nous un mail : <a href="mailto:mahiratragroupe@gmail.com">mahiratragroupe@gmail.com</a></p>
+            </div>
+
+            <div class="footer-column company-column">
+                <h4>Entreprise</h4>
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="about.html">À propos de nous</a></li>
+                    <li><a href="#">Contactez-nous</a></li>
+                    <li><a href="service.html">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column services-column">
+                <h4>Nos services</h4>
+                <ul>
+                    <li><a href="service_d_application.html">Services d'application</a></li>
+                    <li><a href="transformation_numerique.html">Transformation numérique</a></li>
+                    <li><a href="conseil_en_informatique.html">Conseil en informatique</a></li>
+                    <li><a href="gestion_et_support.html">Gestion et support</a></li>
+                    <li><a href="developpement_de_logiciels.html">Développement de logiciels</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column essentials-column">
+                <h4>Essentiel</h4>
+                <ul>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="politique_de_confidentialite.html">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="abesoin">
+            <div class="p-besoin">
+                <img src="./assets/image/help-button-1701468_1280.png" alt="help">
+            </div>
+            <div class="besoin">
+                <p>BESOIN D'AIDE ?</p>
+                <a class="consultation" href="contact.html">Consultation gratuite</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="p">© 2024 Mahiratra Groupe. Tous droits réservés.</div>
+        </div>
+    </footer>
+
+    <div class="back-to-top-box">
+        <button class="btn-back" id="btnBack" onclick="topFunction()">
+            <i class="fa fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div id="notificatioResults" class="notificatio-results">
+        <span id="notificatioMessage"></span>
+        <button id="prevResult">&lt;</button>
+        <button id="nextResult">&gt;</button>
+    </div>
+
+    <script src="./assets/js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

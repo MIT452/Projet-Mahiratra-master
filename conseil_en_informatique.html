@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/conseil_en_informatique.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conseil en informatique</title>
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="./assets/font/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/font/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
+    <link href="./assets/font/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Section caché de BARRE DE RECHERCHE -->
+    <div id="searchBlock" class="search-block">
+
+        <div class="divCher">
+            <form action="#" method="POST"></form>
+            <span class="close-btn0" id="closeSearchBtn">&times;</span>
+            <div class="cadreS">
+                <div id="searchBar" class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher...">
+                    <i class="fa-solid fa-search" id="icon-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Partie caché de barre de contact -->
+    <div id="contactBlock" class="contact-block">
+        <div class="divBody">
+            <form action="#" method="POST"></form>
+            <span class="close-btn" id="closeContactBtn">&times;</span>
+            <div class="tex-contactBody">
+                <div class="imagg">
+                    <img src="./assets/image/Mahiratra.jpg" alt="Mahiratra">
+                    <p class="tex-img">Vous souhaitez nous contactez ?</p>
+                </div>
+                <div class="tex-details">
+                    <p class="p1"><span><span class="mar">____</span>Mahiratra Groupe</span> est un fournisseur
+                        de
+                        services de conseil informatique et de
+                        développement de logiciels. Après avoir débuté en tant que petite entreprise de produits
+                        d'IA, nous
+                        sommes passés aux services informatiques et depuis, nous avons aidé les organisations
+                        informatiques
+                        et les sociétés de produits logiciels à améliorer leurs performances commerciales et à
+                        gagner
+                        rapidement de nouveaux clients.</p>
+                    <p class="p2">EN SAVOIR PLUS</p>
+                    <p class="p3">© 2024 Mahiratra Groupe. Tous droits réservés.</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contact-forme" action="http://localhost:3000/contact" method="POST">
+                    <div class="cadra">
+
+                        <div class="form-group">
+                            <label for="name">VOTRE NOM</label>
+                            <input type="text" id="name" name="name" placeholder="Entrez Votre Nom" required>
+                            <i class="icon-user">
+                                <i class="fa-solid fa-user"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">VOTRE EMAIL</label>
+                            <input type="email" id="email" name="email" placeholder="Entrez Votre Email" required>
+                            <i class="icon-email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">SUJET</label>
+                            <input type="text" id="subject" name="subject" placeholder="Entrez Votre Sujet" required>
+                            <i class="icon-folder">
+                                <i class="fa-solid fa-folder"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">VOTRE MESSAGE (OPTIONNEL)</label>
+                            <textarea id="message" name="message" placeholder="Entrez Votre Message"></textarea>
+                            <i class="icon-message">
+                                <i class="fa-solid fa-comments"></i>
+                            </i>
+                        </div>
+                        <button type="submit">SOUMETTRE</button>
+                    </div>
+                </form>
+                <!-- Conteneur pour afficher le message de notification -->
+                <div id="notificatione-overlay" class="hidden">
+                    <div id="notificatione">
+                        <p id="notificatione-message"></p>
+                        <button id="close-notificatione">OK</button>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!--Section Header-->
+    <section class="header">
+        <nav class="navbar">
+            <div class="cale">
+                <span class="toggle"><i class="fa-solid fa-bars" id="toggle"></i></span>
+                <span class="caché"><a href="index.html" class="home"><i class="fa-solid fa-house"
+                            id="home"></i></a></span>
+            </div>
+            <a href="#"><img class="logo" src="./assets/image/Mahiratra.jpg" alt="Logo Mahiratra Groupe"></a>
+            <div class="scale">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos de nous</a>
+                <a href="service.html">Nos services</a>
+                <a href="contact.html" class="mobile">Contact</a>
+            </div>
+            <div class="centre">
+                <div class="espaceX">
+                    <span class="search-icon" id="showSearch"><i class="fa-solid fa-search"></i></span>
+                    <!-- <a href="#"><img class="header-icon" id="showSearch" src="./assets/image/chercher.png"
+                            alt="Icon pour chercher"></a> -->
+                </div>
+                <a href="contact.html" class="btn-secondary contact-btn">Contact</a>
+                <div class="espaceX">
+                    <span class="m-contact-icon" id="showContact"><i class="fa-solid fa-border-all"
+                            style="margin-left: 30px; margin-right: 10px;"></i></span>
+                </div>
+                <!-- <a href="#"><img class="header-icon" id="showContact" src="./assets/image/menu.png"
+                        alt="Menu pour contact"></a> -->
+            </div>
+        </nav>
+    </section>
+
+    <!--Section Hero (Example Section) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Conseil en informatique</h1>
+            <div class="texte-para">
+                <p class="opacity"><a href="index.html">Accueil</a></p>
+                <p class="opacity"> > </p>
+                <p class="opacity"><a href="service.html">Service</a></p>
+                <p class="opacity"> > </p>
+                <p>Conseil en informatique </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Section details_conception -->
+    <section class="conception">
+
+        <div class="espacem">
+
+            <div class="cadre-liste">
+                <div class="element-liste">
+                    <ul>
+                        <a href="test_et_assurance_qualite.html">
+                            <li>Tests et assurance qualité</li>
+                        </a>
+                        <a href="conception_UX-UI.html">
+                            <li>Conception UX/UI</li>
+                        </a>
+                        <li style="color: var(--main-color); font-family: Roboto-Medium, sans-serif; cursor: pointer;">
+                            Conseil en
+                            informatique</li>
+                        <a href="service_d_application.html">
+                            <li>Services d'application</li>
+                        </a>
+                        <a href="gestion_et_support.html">
+                            <li>Gestion et support</li>
+                        </a>
+                        <a href="dotation_en_personnel_et_recrutement.html">
+                            <li>Dotation en personnel et recrutement</li>
+                        </a>
+                        <a href="transformation_numerique.html">
+                            <li>Transformation numérique</li>
+                        </a>
+                        <a href="developpement_de_logiciels.html">
+                            <li>Développement de logiciels</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="details-tous">
+                <div class="sous-titre">
+                    <p>Services de conception d'interface utilisateur/expérience utilisateur</p>
+                </div>
+                <div class="cadre-details-texte">
+                    <div class="element-details-texte">
+                        <div class="s-titre">
+                            <p>À l’ère des avancées technologiques rapides, il est essentiel de garder une longueur
+                                d’avance pour réussir en entreprise.</p>
+                        </div>
+                        <div class="part-int">
+                            <p class="ns">Nous proposons des services de conseil informatique spécialisés pour vous
+                                aider à naviguer dans les complexités du paysage numérique. Nos consultants expérimentés
+                                travaillent en étroite collaboration avec vous pour développer des stratégies qui
+                                stimulent l'innovation, améliorent l'efficacité et atteignent vos objectifs commerciaux.
+                            </p>
+                            <div class="cadre-comprend">
+                                <ol style="list-style-type:none;">
+                                    <li>Stratégie et planification
+                                        en informatique</li>
+                                    <li>Evaluation de la technologie</li>
+                                    <li>Transformation numérique</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section details de chaque service -->
+    <section class="det-conception">
+        <div class="container">
+            <div class="displayg">
+                <div class="bloc-im1">
+                    <div class="ima1"></div>
+                    <div class="corp-et-tex1">
+                        <h3>Stratégie et planification informatique</h3>
+                        <p class="para">Développer des stratégies informatiques complètes qui s’alignent sur vos
+                            objectifs commerciaux et stimulent la croissance.</p>
+                        <a href="contact.html" class="btn-simple">Savoir encore plus ></a>
+                    </div>
+                </div>
+                <div class="bloc-im2">
+                    <div class="ima2"></div>
+                    <div class="corp-et-tex2">
+                        <h3>Évaluation de la technologie</h3>
+                        <p class="para">Évaluer votre environnement informatique actuel pour identifier les opportunités
+                            d’optimisation et d’amélioration.</p>
+                        <a href="contact.html" class="btn-simple">Savoir encore plus ></a>
+                    </div>
+                </div>
+                <div class="bloc-im3">
+                    <div class="ima3"></div>
+                    <div class="corp-et-tex3">
+                        <h3>Transformation numérique</h3>
+                        <p class="para">Guider votre parcours de transformation numérique avec l’adoption de
+                            technologies et de pratiques innovantes. La protection de vos actifs numériques est
+                            primordiale. Nos consultants proposent des stratégies de cybersécurité robustes et des
+                            solutions de gestion des risques pour protéger votre entreprise contre les menaces
+                            potentielles. Nous garantissons que vos systèmes sont sécurisés, conformes et résilients.
+                        </p>
+                        <a href="contact.html" class="btn-simple">Savoir encore plus ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section speciale responsive -->
+    <section class="respons">
+        <div class="cadre-liste">
+            <div class="element-liste">
+                <ul>
+                    <a href="test_et_assurance_qualite.html">
+                        <li>Tests et assurance qualité</li>
+                    </a>
+                    <a href="conception_UX-UI.html">
+                        <li>Conception UX/UI</li>
+                    </a>
+                    <li style="color: var(--main-color); font-family: Roboto-Medium, sans-serif; cursor: pointer;">
+                        Conseil en
+                        informatique</li>
+                    <a href="service_d_application.html">
+                        <li>Services d'application</li>
+                    </a>
+                    <a href="gestion_et_support.html">
+                        <li>Gestion et support</li>
+                    </a>
+                    <a href="dotation_en_personnel_et_recrutement.html">
+                        <li>Dotation en personnel et recrutement</li>
+                    </a>
+                    <a href="transformation_numerique.html">
+                        <li>Transformation numérique</li>
+                    </a>
+                    <a href="developpement_de_logiciels.html">
+                        <li>Développement de logiciels</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Section footer -->
+
+    <footer>
+        <div class="footer-top">
+            <div class="about-footer-text">
+                <h3>Rejoignez notre liste de diffusion</h3>
+                <p>Pour recevoir nos actualités et mises à jour directement dans votre boîte de réception.</p>
+            </div>
+            <div class="newsletter-signup">
+                <form id="subscribeForm">
+                    <input type="email" id="emaile" placeholder="Votre Adresse E-Mail" required />
+                    <button type="submit">S'INSCRIRE</button>
+                </form>
+                <p id="responseMessage"></p>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="footer-column logo-column">
+                <img src="./assets/image/Mahiratra.jpg" alt="Logo Mahiratra Groupe">
+                <p class="tex">Mahiratra Groupe est un fournisseur de services de conseil informatique et de
+                    développement de
+                    logiciels.
+                    Après avoir débuté en tant que petite entreprise de produits d'IA, nous sommes passés aux services
+                    informatiques et depuis,
+                    nous avons aidé des organisations informatiques et des sociétés de produits logiciels.
+                </p>
+            </div>
+
+            <div class="footer-column contact-column">
+                <h4>Entrer en contact</h4>
+                <h5>Emplacement</h5>
+                <p>Lot : K 16 , rue de Tananarive ,
+                    Tanambao Antalaha 206
+                    Madagascar </p>
+                <h5>Contact</h5>
+                <p>Envoyez-nous un mail : <a href="mailto:mahiratragroupe@gmail.com">mahiratragroupe@gmail.com</a></p>
+            </div>
+
+            <div class="footer-column company-column">
+                <h4>Entreprise</h4>
+                <ul>
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="about.html">À propos de nous</a></li>
+                    <li><a href="contact.html">Contactez-nous</a></li>
+                    <li><a href="service.html">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column services-column">
+                <h4>Nos services</h4>
+                <ul>
+                    <li><a href="service_d_application.html">Services d'application</a></li>
+                    <li><a href="transformation_numerique.html">Transformation numérique</a></li>
+                    <li><a href="conseil_en_informatique.html">Conseil en informatique</a></li>
+                    <li><a href="gestion_et_support.html">Gestion et support</a></li>
+                    <li><a href="developpement_de_logiciels.html">Développement de logiciels</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column essentials-column">
+                <h4>Essentiel</h4>
+                <ul>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="politique_de_confidentialite.html">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="abesoin">
+            <div class="p-besoin">
+                <img src="./assets/image/help-button-1701468_1280.png" alt="help">
+            </div>
+            <div class="besoin">
+                <p>BESOIN D'AIDE ?</p>
+                <a class="consultation" href="contact.html">Consultation gratuite</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="p">© 2024 Mahiratra Groupe. Tous droits réservés.</div>
+        </div>
+    </footer>
+
+    <div class="back-to-top-box">
+        <button class="btn-back" onclick="topFunction()">
+            <i class="fa fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div id="notificatioResults" class="notificatio-results">
+        <span id="notificatioMessage"></span>
+        <button id="prevResult">&lt;</button>
+        <button id="nextResult">&gt;</button>
+    </div>
+
+    <script src="./assets/js/conseil_en_informatique.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Mahiratra Groupe</title>
+    <link rel="icon" type="image" href="./assets/image/Mahiratra.jpg" sizes="16x16">
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="./assets/font/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/font/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
+    <link href="./assets/font/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Section caché de BARRE DE RECHERCHE -->
+    <div id="searchBlock" class="search-block">
+
+        <div class="divCher">
+            <form action="#" method="POST"></form>
+            <span class="close-btn0" id="closeSearchBtn">&times;</span>
+            <div class="cadreS">
+                <div id="searchBar" class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher...">
+                    <!-- <span class="fas fa-search"></span> -->
+                    <i class="fa-solid fa-search" id="icon-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Partie caché de barre de contact -->
+    <div id="contactBlock" class="contact-block">
+        <div class="divBody">
+            <form action="#" method="POST"></form>
+            <span class="close-btn" id="closeContactBtn">&times;</span>
+            <div class="tex-contactBody">
+                <div class="imagg">
+                    <img src="./assets/image/Mahiratra.jpg" alt="Mahiratra">
+                    <p class="tex-img">Vous souhaitez nous contactez ?</p>
+                </div>
+                <div class="tex-details">
+                    <p class="p1"><span><span class="mar">____</span>Mahiratra Groupe</span> est un fournisseur
+                        de
+                        services de conseil informatique et de
+                        développement de logiciels. Après avoir débuté en tant que petite entreprise de produits
+                        d'IA, nous
+                        sommes passés aux services informatiques et depuis, nous avons aidé les organisations
+                        informatiques
+                        et les sociétés de produits logiciels à améliorer leurs performances commerciales et à
+                        gagner
+                        rapidement de nouveaux clients.</p>
+                    <p class="p2">EN SAVOIR PLUS</p>
+                    <p class="p3">© 2024 Mahiratra Groupe. Tous droits réservés.</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contact-forme" action="http://localhost:3000/contact" method="POST">
+                    <div class="cadra">
+
+                        <div class="form-group">
+                            <label for="name">VOTRE NOM</label>
+                            <input type="text" id="name" name="name" placeholder="Entrez Votre Nom" required>
+                            <i class="icon-user">
+                                <i class="fa-solid fa-user"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">VOTRE EMAIL</label>
+                            <input type="email" id="email" name="email" placeholder="Entrez Votre Email" required>
+                            <i class="icon-email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">SUJET</label>
+                            <input type="text" id="subject" name="subject" placeholder="Entrez Votre Sujet" required>
+                            <i class="icon-folder">
+                                <i class="fa-solid fa-folder"></i>
+                            </i>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">VOTRE MESSAGE (OPTIONNEL)</label>
+                            <textarea id="message" name="message" placeholder="Entrez Votre Message"></textarea>
+                            <i class="icon-message">
+                                <i class="fa-solid fa-comments"></i>
+                            </i>
+                        </div>
+                        <button type="submit" id="btn-footer">SOUMETTRE</button>
+                    </div>
+                </form>
+                <!-- Conteneur pour afficher le message de notification -->
+                <div id="notificatione-overlay" class="hidden">
+                    <div id="notificatione">
+                        <p id="notificatione-message"></p>
+                        <button id="close-notificatione">OK</button>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--Section Header-->
+    <section class="header">
+        <nav class="navbar">
+            <div class="cale">
+                <span class="toggle"><i class="fa-solid fa-bars" id="toggle"></i></span>
+                <span class="caché"><a href="index.html" class="home"><i class="fa-solid fa-house"
+                            id="home"></i></a></span>
+            </div>
+            <a href="#"><img class="logo" src="./assets/image/Mahiratra.jpg" alt="Logo Mahiratra Groupe"></a>
+            <div class="scale">
+                <a href="#" class="couleur">Accueil</a>
+                <a href="about.html">À propos de nous</a>
+                <a href="service.html">Nos services</a>
+                <a href="contact.html" class="mobile">Contact</a>
+            </div>
+            <div class="centre">
+                <div class="espaceX">
+                    <span class="search-icon" id="showSearch"><i class="fa-solid fa-search"></i></span>
+                    <!-- <a href="#"><img class="header-icon" id="showSearch" src="./assets/image/chercher.png"
+                            alt="Icon pour chercher"></a> -->
+                </div>
+                <a href="contact.html" target="_blank" class="btn-secondary contact-btn">Contact</a>
+                <div class="espaceX">
+                    <span class="m-contact-icon" id="showContact"><i class="fa-solid fa-border-all"
+                            style="margin-left: 30px; margin-right: 10px;"></i></span>
+                </div>
+                <!-- <a href="#"><img class="header-icon" id="showContact" src="./assets/image/menu.png"
+                        alt="Menu pour contact"></a> -->
+            </div>
+        </nav>
+    </section>
+
+    <!--Section Hero (Example Section) -->
+
+    <!-- Slider Section -->
+    <section class="slider-container">
+        <div class="slider">
+            <!-- Dupliquez la dernière image ici pour l'effet infini -->
+            <div class="slide"><img src="./assets/image/imgs/var5.jpg" alt="Image 4"></div>
+
+            <div class="slide"><img src="./assets/image/3409297.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="./assets/image/imgs/cav2.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="./assets/image/imgs/var3.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="./assets/image/imgs/var5.jpg" alt="Image 4"></div>
+
+            <!-- Dupliquez la première image ici pour l'effet infini -->
+            <div class="slide"><img src="./assets/image/3409297.jpg" alt="Image 1"></div>
+        </div>
+
+        <!-- Boutons de navigation -->
+        <button class="prev">&#9664;</button>
+        <button class="next">&#9654;</button>
+
+        <!-- Texte de présentation -->
+        <div class="hero-content">
+            <div class="btn-container">
+                <span class="btn-design-hero">Notre vision pour mieux grandir.</span>
+            </div>
+            <h1>Nous sommes fiers du travail que nous avons accompli.</h1>
+            <div>
+                <p>Organisez vos événements carrière en ligne et en physique comme vous l’entendez grâce à une
+                    plateforme
+                    dédiée à votre image. Boostez la carrière de vos membres tout en gardant la main sur vos données et
+                    vos
+                    relations entreprises.</p>
+            </div>
+            <div class="bouton-p"><a href="#" class="btn-primary">Aider les clients à créer l'avenir !</a></div>
+        </div>
+    </section>
+
+
+
+    <!-- Section a propos-->
+
+    <section id="about" class="about">
+        <h2>À propos de nous</h2>
+        <p class="subtitle">Donnez du sens à votre entreprise.</p>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="sous-texte">Nous prenons le temps de développer une relation de travail solide avec vous en
+                    comprenant vos
+                    besoins, votre entreprise et votre culture d'entreprise.</p>
+                <p>Mahiratra Groupe a le privilège de travailler avec des centaines d'entreprises innovantes et tournées
+                    vers l'avenir, y compris de nombreux fabricants de matériel parmi les meilleurs au monde, et
+                    d'obtenir un service informatique pour votre technologie.
+                </p>
+                <p>
+                    Notre équipe a conçu des produits révolutionnaires et a également conseillé des entreprises.
+                </p>
+                <div class="about-footer">
+                    <div class="about-feature">
+                        <img src="./assets/image/solution.png" alt="Icon 1" class="icon">
+                        <p>Conseils et accompagnement sur mesure</p>
+                    </div>
+                    <div class="about-feature">
+                        <img src="./assets/image/etoile.png" alt="Icon 2" class="icon">
+                        <p>Politiques d'entreprise flexibles</p>
+                    </div>
+                </div>
+                <div class="btn-primary1"><a href="about.html">En savoir plus</a></div>
+            </div>
+            <div class="fleximage">
+                <div class="about-images">
+                    <img src="./assets/image/acc2.jpg" alt="Image 1" class="about-image1">
+                    <img src="./assets/image/photo-accueil2.jpg" alt="Image 2" class="about-image2">
+                </div>
+                <div>
+                    <button class="btn-more0 more-btn">Donnez du sens à votre entreprise.</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Section Services  -->
+    <section class="services">
+        <h2>Nos Services</h2>
+        <p class="subtitle">Principaux domaines d'expertise</p>
+        <h3>Nous facilitons toutes sortes d'interactions B2B, B2C et d'opérations internes.</h3>
+        <div class="services-container">
+            <div class="card">
+                <img src="./assets/image/woman-5653501.jpg" alt="Service 1">
+                <div class="content">
+                    <h3>Transformation numérique</h3>
+                    <p>La transformation numérique consiste à mettre en œuvre une stratégie commerciale individuelle
+                        pour l’adoption du numérique.</p>
+                </div>
+                <a href="transformation_numerique.html" class="btn-more more-btn">EN SAVOIR PLUS</a>
+            </div>
+            <div class="card">
+                <img src="./assets/image/job-5382501.jpg" alt="Service 2">
+                <div class="content">
+                    <h3>Dotation en personnel et recrutement</h3>
+                    <p>La capacité d’embaucher et de développer de grands talents est essentielle pour les employés les
+                        plus intelligents d’aujourd’hui.</p>
+                </div>
+                <a href="dotation_en_personnel_et_recrutement.html" class="btn-more more-btn">EN SAVOIR PLUS</a>
+            </div>
+            <div class="card">
+                <img src="./assets/image/office-1516329.jpg" alt="Service 3">
+                <div class="content">
+                    <h3> Gestion et support</h3>
+                    <p>Les services informatiques gérés constituent un moyen rentable de gérer votre infrastructure
+                        informatique.</p>
+                </div>
+                <a href="gestion_et_support.html" class="btn-more more-btn">EN SAVOIR PLUS</a>
+            </div>
+            <div class="card">
+                <img src="./assets/image/woman-5653501.jpg" alt="Service 4">
+                <div class="content">
+                    <h3>Service d’application</h3>
+                    <p>La transformation numérique consiste à mettre en œuvre une stratégie commerciale individuelle
+                        pour l’adoption du numérique.</p>
+                </div>
+                <a href="service_d_application.html" class="btn-more more-btn">EN SAVOIR PLUS</a>
+            </div>
+            <div class="card">
+                <img src="./assets/image/job-5382501.jpg" alt="Service 5">
+                <div class="content">
+                    <h3>Conseil en informatique</h3>
+                    <p>La transformation numérique consiste à mettre en œuvre une stratégie commerciale individuelle
+                        pour l’adoption du numérique.</p>
+                </div>
+                <a href="conseil_en_informatique.html" class="btn-more more-btn">EN SAVOIR PLUS</a>
+            </div>
+            <div class="card">
+                <img src="./assets/image/office-1516329.jpg" alt="Service 6">
+                <div class="content">
+                    <h3> Tests et assurance qualité</h3>
+                    <p>Nous proposons une gamme complète services d'externalisation d'assurance qualité et de tests et
+                        pouvons vous aider à développer…</p>
+                </div>
+                <a href="test_et_assurance_qualite.html" class="btn-more more-btn">EN SAVOIR PLUS</a>
+            </div>
+        </div>
+        <div class="bloc-appelez">
+            <div class="info-appel">
+                <a href="#" id="callTrigger"><i class="fa-solid fa-phone-volume" id="appel"></i></a>
+                <p>Appelez pour une
+                    consultation
+                    gratuite</p>
+            </div>
+        </div>
+        <!-- Modal pour choisir l'application -->
+        <div id="appSelector" class="modal">
+            <div class="modal-content">
+                <h3>Choisissez une application :</h3>
+                <ul>
+                    <li><a href="https://wa.me/+261328356623" target="_blank">WhatsApp</a></li>
+                    <li><a href="skype:+261328356623?call">Skype</a></li>
+                    <li><a href="tel:+261328356623">Téléphone</a></li>
+                    <li><a href="https://m.me/Mahiratra_Groupe_ID" target="_blank">Messenger</a></li>
+                    <li><a href="https://zoom.us/j/Mahiratra_Groupe_ID_reunion_Zoom" target="_blank">Zoom</a></li>
+                    <li><a href="https://meet.google.com/Mahiratra_Groupe_LIEN_de_réunion_Meet" target="_blank">Google
+                            Meet</a></li>
+                    <li><a href="https://teams.microsoft.com/l/meetup-join/Mahiratra_Groupe_LIEN_Teams"
+                            target="_blank">Microsoft
+                            Teams</a></li>
+                </ul>
+                <button id="closeSelector">Annuler</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section footer -->
+
+    <footer>
+        <div class="footer-top">
+            <div class="about-footer-text">
+                <h3>Rejoignez notre liste de diffusion</h3>
+                <p>Pour recevoir nos actualités et mises à jour directement dans votre boîte de réception.</p>
+            </div>
+            <div class="newsletter-signup">
+                <form id="subscribeForm">
+                    <input type="email" id="emaile" placeholder="Votre Adresse E-Mail" required />
+                    <button type="submit" id="btnFooter">S'INSCRIRE</button>
+                </form>
+                <p id="responseMessage"></p>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="footer-column logo-column">
+                <img src="./assets/image/Mahiratra.jpg" alt="Logo Mahiratra Groupe">
+                <p class="tex">Mahiratra Groupe est un fournisseur de services de conseil informatique et de
+                    développement de
+                    logiciels.
+                    Après avoir débuté en tant que petite entreprise de produits d'IA, nous sommes passés aux services
+                    informatiques et depuis,
+                    nous avons aidé des organisations informatiques et des sociétés de produits logiciels.
+                </p>
+            </div>
+
+            <div class="footer-column contact-column">
+                <h4>Entrer en contact</h4>
+                <h5>Emplacement</h5>
+                <p>Lot : K 16 , rue de Tananarive ,
+                    Tanambao Antalaha 206
+                    Madagascar </p>
+                <h5>Contact</h5>
+                <p>Envoyez-nous un mail : <a href="mailto:mahiratragroupe@gmail.com">mahiratragroupe@gmail.com</a></p>
+            </div>
+
+            <div class="footer-column company-column">
+                <h4>Entreprise</h4>
+                <ul>
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="about.html">À propos de nous</a></li>
+                    <li><a href="contact.html">Contactez-nous</a></li>
+                    <li><a href="service.html">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column services-column">
+                <h4>Nos services</h4>
+                <ul>
+                    <li><a href="service_d_application.html">Services d'application</a></li>
+                    <li><a href="transformation_numerique.html">Transformation numérique</a></li>
+                    <li><a href="conseil_en_informatique.html">Conseil en informatique</a></li>
+                    <li><a href="gestion_et_support.html">Gestion et support</a></li>
+                    <li><a href="developpement_de_logiciels.html">Développement de logiciels</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column essentials-column">
+                <h4>Essentiel</h4>
+                <ul>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="politique_de_confidentialite.html">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="abesoin">
+            <div class="p-besoin">
+                <img src="./assets/image/help-button-1701468_1280.png" alt="help">
+            </div>
+            <div class="besoin">
+                <p>BESOIN D'AIDE ?</p>
+                <a class="consultation" href="contact.html">Consultation gratuite</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="p">© 2024 Mahiratra Groupe. Tous droits réservés.</div>
+        </div>
+    </footer>
+    <div class="back-to-top-box">
+        <button class="btn-back" id="btnBack" onclick="topFunction()">
+            <i class="fa fa-arrow-up"></i>
+        </button>
+    </div>
+    <div id="notificatioResults" class="notificatio-results">
+        <span id="notificatioMessage"></span>
+        <button id="prevResult">&lt;</button>
+        <button id="nextResult">&gt;</button>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
